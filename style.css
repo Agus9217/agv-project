@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --black: #000000;
+  --blue: #055475;
+  --blueSky: #AAD9E9;
+  --white: #ffffff;
+  --orange: #F26417;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fafbfd;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px 0 20px;
+  z-index: 15;
+}
+
+.header > input, .header > label {
+  display: none;
+}
+
+.logo-img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.navbar > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-link {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.navbar-link > hr {
+  width: 0;
+  border: 1px solid transparent;
+  transition: all linear 0.2s;
+}
+
+.navbar-link:hover > hr {
+  width: 100%;
+  border: 1px solid var(--blueSky);
+}
+
+.navbar-link-background {
+  background: var(--blue); 
+}
+
+.active {
+  color: var(--orange);
+}
+
+.active > hr {
+  border: 1px solid var(--orange);
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0,0.3);
+  z-index: 1;
+}
+
+.slider > ul {
+  display: flex;
+  width: 400%;
+
+  animation: slider 20s infinite alternate;
+}
+
+.slider-img {
+  width: 100%;
+}
+
+.slider-img > img {
+  width: 100%;
+}
+
+@keyframes slider {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
