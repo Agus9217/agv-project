@@ -266,7 +266,7 @@ body {
   font-weight: 500;
 }
 
-.contacto-tel, .contacto-mail {
+.contacto-gps {
   color: var(--blue);
   display: flex;
   align-items: center;
@@ -281,9 +281,15 @@ body {
   flex-direction: column;
 }
 
-.bi-envelope, .bi-telephone-fill {
+.bi-geo-alt {
   font-size: 1.8rem;
   padding-right: 1rem;
+}
+
+.contacto-autor {
+  padding-top: 3rem;
+  text-align: end;
+
 }
 
 .autor-design {
@@ -300,6 +306,7 @@ body {
 
 
 .sobre-nosotros-titulo {
+  text-align: center;
   color: var(--blue);
   font-size: 2rem;
 }
@@ -315,6 +322,16 @@ body {
   padding-top: 10rem;
   margin: auto;
   width: 450px;
+}
+
+.form-titulo {
+  font-size: 1.8vw;
+  text-align: center;
+  color: var(--blue);
+}
+
+.form-parrafo {
+  padding: 2rem;
 }
 
 .form-areas {
